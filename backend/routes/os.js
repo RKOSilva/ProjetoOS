@@ -13,6 +13,7 @@ router.post('/', verifyToken, async (req, res) => {
     await order.save();
     res.status(201).json(order);
   } catch (err) {
+    console.error(err);
     res.status(500).json({ error: 'Erro ao criar OS' });
   }
 });

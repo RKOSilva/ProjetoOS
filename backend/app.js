@@ -13,4 +13,8 @@ const osRoutes = require('./routes/os');
 app.use('/api/auth', authRoutes);
 app.use('/api/os', osRoutes);
 
+const userRoutes = require('./routes/users');
+app.use('/api/users', userRoutes);
+
+
 module.exports = app;
