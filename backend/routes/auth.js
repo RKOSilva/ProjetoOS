@@ -13,13 +13,14 @@ router.post('/register', async (req, res) => {
         const existing = await User.findOne({email});
         if (existing) return res.status(400).json({error: 'Usuário já cadastrado'});
 
-        const hasedPassword = await bcrypt.hash(password, 10);
+        const hashedPassword = await bcrypt.hash(password, 10);
 
-        const user = new User({ name, email, password: hashedPassord, role});
+        const user = new User({ name, email, password: hashedPassword, role});
         await user.save();
 
         res.status(201).json({message: 'Usuário registrado com sucesso'});
     } catch (err) {
+        console.error(err);
         res.status(500).json({error: 'Erro no servidor'});
     }
 });
@@ -41,6 +42,7 @@ router.post('/login', async (req, res) => {
 
         res.json({token, user: {name: user.name, email:user.email, role: user.role}});
     } catch (err) {
+        console.error(err);
         res.status(500).json({error: 'Erro no login'});
     }
 });
