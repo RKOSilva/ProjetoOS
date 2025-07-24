@@ -1,4 +1,3 @@
-```md
 # 🛠️ ProjetoOS – Sistema de Ordem de Serviço (API REST)
 
 Este é um sistema backend para gerenciamento de Ordens de Serviço (OS), voltado para empresas ou equipes técnicas. Com autenticação baseada em JWT, o projeto permite que **administradores** cadastrem OS e técnicos acompanhem seus atendimentos.
@@ -20,8 +19,7 @@ Este é um sistema backend para gerenciamento de Ordens de Serviço (OS), voltad
 
 ## 📁 Estrutura de Pastas
 
-```
-
+```bash
 ProjetoOS/
 ├── controllers/
 │   └── authController.js       # Lógica de login
@@ -36,8 +34,6 @@ ProjetoOS/
 ├── .env                        # Configurações sensíveis (não versionar)
 ├── server.js                   # Arquivo principal do app
 └── package.json
-
-````
 
 ---
 
