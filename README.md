@@ -1,5 +1,3 @@
-Perfeito! Aqui está o **README.md completo e formatado** para você usar diretamente no seu repositório [`ProjetoOS`](https://github.com/RKOSilva/ProjetoOS). É só copiar e colar no arquivo `README.md` na raiz do projeto:
-
 ---
 
 ```md
