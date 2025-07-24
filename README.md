@@ -1,3 +1,4 @@
+````md
 # 🛠️ ProjetoOS – Sistema de Ordem de Serviço (API REST)
 
 Este é um sistema backend para gerenciamento de Ordens de Serviço (OS), voltado para empresas ou equipes técnicas. Com autenticação baseada em JWT, o projeto permite que **administradores** cadastrem OS e técnicos acompanhem seus atendimentos.
@@ -34,28 +35,34 @@ ProjetoOS/
 ├── .env                        # Configurações sensíveis (não versionar)
 ├── server.js                   # Arquivo principal do app
 └── package.json
+````
 
 ---
 
 ## 🔐 Funcionalidades
 
 ### 👤 Usuários
-- Login com email e senha
-- Autenticação via token JWT
-- Dois tipos de usuário: `admin` e `tecnico`
+
+* Login com email e senha
+* Autenticação via token JWT
+* Dois tipos de usuário: `admin` e `tecnico`
 
 ### 📋 Ordem de Serviço
-- **Admin**:
-  - Cria ordens de serviço
-  - Lista todas as OS
-- **Técnico**:
-  - Lista apenas as suas OS
-  - Atualiza status da OS atribuída
+
+* **Admin**:
+
+  * Cria ordens de serviço
+  * Lista todas as OS
+* **Técnico**:
+
+  * Lista apenas as suas OS
+  * Atualiza status da OS atribuída
 
 ### 🔄 Status da OS:
-- `pendente` (padrão)
-- `em andamento`
-- `finalizado`
+
+* `pendente` (padrão)
+* `em andamento`
+* `finalizado`
 
 ---
 
@@ -66,7 +73,7 @@ ProjetoOS/
 ```bash
 git clone https://github.com/RKOSilva/ProjetoOS.git
 cd ProjetoOS
-````
+```
 
 ### 2. Instale as dependências
 
@@ -78,7 +85,7 @@ npm install
 
 Crie um arquivo `.env` na raiz com:
 
-```
+```env
 MONGO_URI=seu_link_mongodb
 JWT_SECRET=sua_chave_secreta
 ```
@@ -157,4 +164,4 @@ Desenvolvido por [Robson Silva](https://github.com/RKOSilva)
 
 > “A prática leva à perfeição. Cada linha de código é um passo rumo à excelência.” 🚀
 
----
+```
